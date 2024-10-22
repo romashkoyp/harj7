@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <title>Harjoitus 7: Html 5 -mediaelementit ja kuvagalleria (Lightbox)</title>
+    <meta charset="UTF-8">
+    <link href="css/lightbox.css" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <h1>Tehtävä 1: Kuvagallerian toteutus</h1>
+      <a href="images/image-1.jpg" data-lightbox="Praha" data-title="Kaarlen silta">
+        <img src="images/image-1.jpg" alt="Kaarlen silta">
+      </a>
+      <a href="images/image-2.jpg" data-lightbox="Praha" data-title="Kaarlen silta - portti">
+        <img src="images/image-2.jpg" alt="Kaarlen silta - portti">
+      </a>
+      <a href="images/image-3.jpg" data-lightbox="Praha" data-title="Aukion kello">
+        <img src="images/image-3.jpg" alt="Aukion kello">
+      </a>
+      <br>
+      <a href="images/image-4.jpg" data-lightbox="Praha" data-title="Aukion kello - lähi">
+        <img src="images/image-4.jpg" alt="Aukion kello - lähi">
+      </a>
+      <a href="images/image-5.jpg" data-lightbox="Praha" data-title="Aukiolla possua">
+        <img src="images/image-5.jpg" alt="Aukiolla possua">
+      </a>
+      <a href="images/image-6.jpg" data-lightbox="Praha" data-title="Marionetit">
+        <img src="images/image-6.jpg" alt="Marionetit">
+      </a>
+    </div>
+    <div>
+      <h1>Tehtävä 2 - Videon esittäminen</h1>
+      <video 
+        controls
+        poster="images/video01.jpg"
+        width="640"
+        height="480">
+        <source 
+          src="video/helicopter.webm"
+          type='video/webm'>
+        <source 
+          src="video/helicopter.mp4"
+          type="video/mp4">
+        <p>
+          Your browser doesn't support HTML video. Here is a
+          <a href="video/helicopter.mp4" download="video/helicopter.mp4">link to the video</a> instead.
+        </p>
+      </video>
+    </div>
+    <div>
+      <h1>Tehtävä 3 - Videon esittäminen webbisivun taustalla ja Tehtävä 5 - Audio webbisivun taustalla</h1>
+      <p>Tämä <a href="video_sivu.html" target="_blank">linkki</a></p>
+    </div>
+    <div>
+      <h1>Tehtävä 4 - Audio</h1>
+      <audio controls>
+        <source src="audio/kalimba.mp3" type="audio/mpeg">
+        <source src="audio/kalimba.ogg" type="audio/ogg">
+        <p>
+          Download <a href="audio/kalimba.mp3" download="audio/kalimba.mp3">MP3</a> or
+          <a href="audio/kalimba.ogg" download="audio/kalimba.ogg">OGG</a> audio.
+        </p>
+      </audio>
+    </div>
+    <script src="js/lightbox-plus-jquery.js"></script>
+  </body>
+</html>
